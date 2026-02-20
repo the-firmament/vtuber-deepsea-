@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌊 YOUR NAME - Deep Sea Diva</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Josefin+Sans:wght@100;300&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 深海Canvasメイン -->
+    <canvas id="ocean"></canvas>
+    <!-- 光の筋 -->
+    <div class="light-rays"></div>
+
+    <!-- ナビゲーション -->
+    <nav class="navbar">
+        <div class="nav-inner">
+            <div class="logo">
+                <!-- ============================================
+                     ここ！名前を変えてください
+                     ============================================ -->
+                <span class="logo-name">YOUR NAME</span>
+                <span class="logo-sub">Deep Sea Diva</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Surface</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#goods">Goods</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="hamburger" aria-label="メニュー">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-depth-indicator">
+            <div class="depth-line"></div>
+            <span class="depth-num" id="depthNum">0m</span>
+        </div>
+        <div class="hero-content">
+            <p class="hero-sub">Virtual Diva from the Deep</p>
+            <!-- ============================================
+                 ここ！名前を変えてください
+                 ============================================ -->
+            <h1 class="hero-name">YOUR NAME</h1>
+            <div class="hero-wave">〜〜〜〜〜〜〜〜〜</div>
+            <p class="hero-tagline">
+                <!-- ============================================
+                     ここ！キャッチコピーを変えてください
+                     ============================================ -->
+                深海の闇より、歌声をあなたへ
+            </p>
+            <div class="hero-tags">
+                <span class="htag">深海歌姫</span>
+                <span class="htag">歌ってみた</span>
+                <span class="htag">ASMR配信</span>
+            </div>
+            <div class="hero-btns">
+                <a href="#schedule" class="btn-main">配信を見る</a>
+                <a href="https://youtube.com" class="btn-ghost" target="_blank">YouTube ↗</a>
+            </div>
+        </div>
+        <div class="hero-avatar">
+            <div class="avatar-glow"></div>
+            <div class="avatar-ring r1"></div>
+            <div class="avatar-ring r2"></div>
+            <!-- ============================================
+                 ここ！アバター画像をimgタグで差し替えてください
+                 ============================================ -->
+            <div class="avatar-placeholder">🧜‍♀️</div>
+        </div>
+        <div class="scroll-hint">
+            <span class="scroll-text">Dive Deeper</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="depth-marker">— 200m —</div>
+        <div class="section-wrap">
+            <div class="section-label">// Twilight Zone</div>
+            <h2 class="section-heading">About Me</h2>
+            <div class="about-grid">
+                <div class="about-portrait">
+                    <div class="portrait-frame">
+                        <div class="portrait-placeholder">🌊</div>
+                        <div class="biolum-dots"></div>
+                    </div>
+                    <div class="portrait-stats">
+                        <div class="pstat"><span class="pstat-n">150K</span><span class="pstat-l">Subscribers</span></div>
+                        <div class="pstat"><span class="pstat-n">500+</span><span class="pstat-l">Songs</span></div>
+                        <div class="pstat"><span class="pstat-n">2024</span><span class="pstat-l">Debut</span></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="about-greeting">はじめまして、YOUR NAME です 🌊</p>
+                    <p>深海より浮かび上がった歌姫。水中の静けさと闇の中で磨いた歌声をお届けしています。</p>
+                    <p>歌ってみた動画を中心に、深夜のASMR配信や海の生き物雑談なども。深海の静寂があなたを包みます。</p>
+                    <div class="socials">
+                        <a href="#" class="social-pill">📺 YouTube</a>
+                        <a href="#" class="social-pill">𝕏 Twitter</a>
+                        <a href="#" class="social-pill">💬 Discord</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule -->
+    <section id="schedule" class="schedule">
+        <div class="depth-marker">— 1000m —</div>
+        <div class="section-wrap">
+            <div class="section-label">// Midnight Zone</div>
+            <h2 class="section-heading">Stream Schedule</h2>
+            <div class="schedule-grid">
+                <div class="scard live">
+                    <div class="scard-head">
+                        <span class="badge-live">● LIVE</span>
+                        <span class="scard-time">NOW</span>
+                    </div>
+                    <h3>【歌枠】深海からおとどけ</h3>
+                    <p>今日はリクエスト受け付けます。</p>
+                    <a href="#" class="scard-btn">配信を見る →</a>
+                </div>
+                <div class="scard">
+                    <div class="scard-head">
+                        <span class="badge-plan">🌊 予定</span>
+                        <span class="scard-time">22:00</span>
+                    </div>
+                    <h3>【ASMR】深海の環境音</h3>
+                    <p>眠れない夜に。</p>
+                    <a href="#" class="scard-btn ghost" data-set="false">リマインダー設定</a>
+                </div>
+                <div class="scard">
+                    <div class="scard-head">
+                        <span class="badge-plan">🌊 予定</span>
+                        <span class="scard-time">24:00</span>
+                    </div>
+                    <h3>【深夜雑談】深海生物の話</h3>
+                    <p>ダイオウイカって本当にいるの？</p>
+                    <a href="#" class="scard-btn ghost" data-set="false">リマインダー設定</a>
+                </div>
+                <div class="scard">
+                    <div class="scard-head">
+                        <span class="badge-plan">明日</span>
+                        <span class="scard-time">20:00</span>
+                    </div>
+                    <h3>【歌ってみた】新曲公開</h3>
+                    <p>深海をテーマにした新作です。</p>
+                    <a href="#" class="scard-btn ghost" data-set="false">リマインダー設定</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="gallery">
+        <div class="depth-marker">— 3000m —</div>
+        <div class="section-wrap">
+            <div class="section-label">// Abyssal Zone</div>
+            <h2 class="section-heading">Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gitem"><div class="gallery-placeholder">🎨</div><div class="goverlay"><p>Official Art</p></div></div>
+                <div class="gitem"><div class="gallery-placeholder">🧜‍♀️</div><div class="goverlay"><p>Live2D Model</p></div></div>
+                <div class="gitem"><div class="gallery-placeholder">🎬</div><div class="goverlay"><p>Highlights</p></div></div>
+                <div class="gitem"><div class="gallery-placeholder">🌊</div><div class="goverlay"><p>Fan Art</p></div></div>
+                <div class="gitem"><div class="gallery-placeholder">🎵</div><div class="goverlay"><p>Cover Songs</p></div></div>
+                <div class="gitem"><div class="gallery-placeholder">🐟</div><div class="goverlay"><p>Deep Sea Talk</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Goods -->
+    <section id="goods" class="goods">
+        <div class="section-wrap">
+            <div class="section-label">// Surface Shop</div>
+            <h2 class="section-heading">Goods</h2>
+            <div class="goods-grid">
+                <div class="gcard">
+                    <div class="gcard-img"><div class="goods-placeholder">👕</div><span class="new-badge">NEW</span></div>
+                    <h3>オリジナルTシャツ</h3>
+                    <p class="gcard-price">¥3,980</p>
+                    <button class="gcard-btn" onclick="alert('商品ページへのリンクを設定してください')">購入する</button>
+                </div>
+                <div class="gcard">
+                    <div class="gcard-img"><div class="goods-placeholder">🎒</div></div>
+                    <h3>トートバッグ</h3>
+                    <p class="gcard-price">¥2,480</p>
+                    <button class="gcard-btn" onclick="alert('商品ページへのリンクを設定してください')">購入する</button>
+                </div>
+                <div class="gcard">
+                    <div class="gcard-img"><div class="goods-placeholder">🖼️</div><span class="new-badge">NEW</span></div>
+                    <h3>アクリルスタンド</h3>
+                    <p class="gcard-price">¥1,980</p>
+                    <button class="gcard-btn" onclick="alert('商品ページへのリンクを設定してください')">購入する</button>
+                </div>
+                <div class="gcard">
+                    <div class="gcard-img"><div class="goods-placeholder">📱</div></div>
+                    <h3>スマホケース</h3>
+                    <p class="gcard-price">¥2,980</p>
+                    <button class="gcard-btn" onclick="alert('商品ページへのリンクを設定してください')">購入する</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="depth-marker">— 6000m —</div>
+        <div class="section-wrap">
+            <div class="section-label">// Hadal Zone</div>
+            <h2 class="section-heading">Contact</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Message in a Bottle</h3>
+                    <p>深海へメッセージを流してください。<br>必ず届きます。</p>
+                    <div class="contact-links">
+                        <a href="/cdn-cgi/l/email-protection#167579786277756256736e777b667a733875797b" class="clink">📧 メールで問い合わせ</a>
+                        <a href="#" class="clink">💼 ビジネスのご相談</a>
+                    </div>
+                </div>
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <div class="fgroup"><input type="text" placeholder="お名前" required></div>
+                    <div class="fgroup"><input type="email" placeholder="メールアドレス" required></div>
+                    <div class="fgroup">
+                        <select required>
+                            <option value="">お問い合わせ種別</option>
+                            <option>コラボのご依頼</option>
+                            <option>ビジネス</option>
+                            <option>ファンレター</option>
+                            <option>その他</option>
+                        </select>
+                    </div>
+                    <div class="fgroup"><textarea placeholder="メッセージ" rows="5" required></textarea></div>
+                    <button type="submit" class="btn-main">送信する 🌊</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <p class="footer-name">YOUR NAME</p>
+                <p class="footer-sub">Deep Sea Diva</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">プライバシーポリシー</a>
+                <a href="#">利用規約</a>
+                <a href="#">ファンマナー</a>
+            </div>
+            <div class="footer-socials">
+                <a href="#">📺</a>
+                <a href="#">𝕏</a>
+                <a href="#">💬</a>
+            </div>
+        </div>
+        <p class="copyright">© 2026 YOUR NAME. All rights reserved. / Template by The Firmament</p>
+    </footer>
+
+    <script 
